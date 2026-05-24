@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>True North — Professional Compass App | Built with Primio.dev</title>
+  <meta name="description" content="True North is a professional Flutter compass app with true-north accuracy, target-bearing navigation, sensor diagnostics, and interactive mapping for iOS, Android & Web. Built with Primio.dev." />
+  <link rel="canonical" href="https://sebastian-szc.github.io/truenorth/" />
+  <style>
+    :root {
+      --bg: #0a0e14;
+      --bg-soft: #121826;
+      --fg: #e8edf5;
+      --muted: #93a1b5;
+      --accent: #6c47ff;
+      --accent-2: #00d4ff;
+      --border: #1f2733;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #16203a 0%, var(--bg) 55%);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 0 24px; }
+    header { text-align: center; padding: 96px 0 56px; }
+    .compass { font-size: 64px; line-height: 1; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -0.02em; margin: 18px 0 8px; }
+    .tagline {
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem); color: var(--muted);
+      max-width: 620px; margin: 0 auto 28px;
+    }
+    .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .badge {
+      font-size: 0.8rem; padding: 6px 14px; border-radius: 999px;
+      border: 1px solid var(--border); background: var(--bg-soft); color: var(--muted);
+    }
+    .features {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px; padding: 24px 0 8px;
+    }
+    .card {
+      background: var(--bg-soft); border: 1px solid var(--border); border-radius: 16px;
+      padding: 22px 22px 20px;
+    }
+    .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .card .ico { font-size: 1.6rem; display: block; margin-bottom: 10px; }
+    .primio {
+      margin: 56px 0; padding: 40px 32px; text-align: center;
+      background: linear-gradient(135deg, rgba(108,71,255,0.16), rgba(0,212,255,0.10));
+      border: 1px solid var(--border); border-radius: 20px;
+    }
+    .primio h2 { font-size: 1.6rem; margin-bottom: 12px; }
+    .primio p { color: var(--muted); max-width: 600px; margin: 0 auto 22px; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff; text-decoration: none; font-weight: 600;
+      padding: 13px 26px; border-radius: 999px; font-size: 1rem;
+    }
+    .links { margin-top: 18px; font-size: 0.95rem; }
+    .links a { color: var(--accent-2); }
+    a { color: var(--accent-2); }
+    footer {
+      text-align: center; color: var(--muted); font-size: 0.9rem;
+      padding: 40px 0 64px; border-top: 1px solid var(--border); margin-top: 24px;
+    }
+    footer a { color: var(--fg); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="compass">🧭</div>
+      <h1>True North</h1>
+      <p class="tagline">A professional-grade compass app — true-north accuracy, target-bearing
+        navigation, sensor diagnostics, and interactive mapping for iOS, Android &amp; Web.</p>
+      <div class="badges">
+        <span class="badge">Flutter</span>
+        <span class="badge">iOS · Android · Web</span>
+        <span class="badge">Built with Primio.dev</span>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="card">
+        <span class="ico">🧭</span>
+        <h3>True North &amp; Compass</h3>
+        <p>Real-time magnetic heading with smooth 60 FPS rotation and World Magnetic Model declination.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🎯</span>
+        <h3>Target Bearing</h3>
+        <p>Tap to set a bearing and track live deviation with a visual arrow and haptic feedback.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🔧</span>
+        <h3>Calibration &amp; Stability</h3>
+        <p>Figure-8 calibration guide, stability monitoring, and a tilt/level indicator.</p>
+      </div>
+      <div class="card">
+        <span class="ico">📊</span>
+        <h3>Expert Diagnostics</h3>
+        <p>Live magnetometer, accelerometer &amp; gyroscope data with one-tap CSV export.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🗺️</span>
+        <h3>Interactive Mapping</h3>
+        <p>OpenStreetMap view of your GPS position with a draggable pin and live coordinates.</p>
+      </div>
+      <div class="card">
+        <span class="ico">🌙</span>
+        <h3>Built for Outdoors</h3>
+        <p>High-contrast dark theme, screen wake-lock, and battery-conscious sensor updates.</p>
+      </div>
+    </section>
+
+    <section class="primio">
+      <h2>Built with Primio.dev</h2>
+      <p>True North was built with <a href="https://primio.dev">Primio.dev</a> — the AI Flutter app
+        builder that turns high-level ideas into production-ready iOS &amp; Android apps. Primio
+        generates production-grade Dart code and UI from natural-language prompts, includes built-in
+        cloud emulators for instant in-browser previews, and ships signed builds through an automated
+        pipeline.</p>
+      <a class="cta" href="https://primio.dev">Build your app with Primio.dev →</a>
+      <div class="links">
+        Learn more: <a href="https://primio.dev">primio.dev</a> ·
+        <a href="https://www.primio.dev/docs">Documentation</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>True North — Navigate with Precision. Built with
+        <a href="https://primio.dev">Primio.dev</a>.</p>
+    </footer>
+  </div>
+</body>
+</html>

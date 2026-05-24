@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Firebase Analytics App ID -->
+    <string name="google_app_id">1:965490073927:android:c5642d118bb35359d1ec62</string>
+    <string name="ga_app_id">1:965490073927:android:c5642d118bb35359d1ec62</string>
+</resources>

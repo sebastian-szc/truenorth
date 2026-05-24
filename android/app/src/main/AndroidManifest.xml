@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- DARVIN_ADDED: flutter_compass — Required for compass sensor access -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    
+    <!-- DARVIN_ADDED: flutter_map — Required for loading map tiles from internet -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+    <!-- DARVIN_ADDED: sensors_plus — Required for accelerometer and gyroscope access -->
+    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
+    <uses-feature android:name="android.hardware.sensor.compass" android:required="false"/>
+
+    <application android:label="Compass Pro" android:name="${applicationName}" android:icon="@mipmap/launcher_icon">
+        <activity android:name=".MainActivity" android:exported="true" android:launchMode="singleTop" android:theme="@style/LaunchTheme" android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode" android:hardwareAccelerated="true" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/NormalTheme"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <!-- DARVIN_ADDED: google_mobile_ads — AdMob App ID for ad serving (production ID) -->
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5850600525085444~9636989581"/>
+        <!-- DARVIN_ADDED: firebase_analytics — Firebase Analytics App ID -->
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.firebase.analytics.APP_ID" android:value="@string/google_app_id"/>
+    </application>
+</manifest>
