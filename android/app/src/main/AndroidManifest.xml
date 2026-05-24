@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- DARVIN_ADDED: flutter_compass — Required for compass sensor access -->
+    <!-- PRIMIO_ADDED: flutter_compass — Required for compass sensor access -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     
-    <!-- DARVIN_ADDED: flutter_map — Required for loading map tiles from internet -->
+    <!-- PRIMIO_ADDED: flutter_map — Required for loading map tiles from internet -->
     <uses-permission android:name="android.permission.INTERNET"/>
     
-    <!-- DARVIN_ADDED: sensors_plus — Required for accelerometer and gyroscope access -->
+    <!-- PRIMIO_ADDED: sensors_plus — Required for accelerometer and gyroscope access -->
     <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="false"/>
     <uses-feature android:name="android.hardware.sensor.gyroscope" android:required="false"/>
     <uses-feature android:name="android.hardware.sensor.compass" android:required="false"/>
@@ -20,9 +20,9 @@
             </intent-filter>
         </activity>
         <meta-data android:name="flutterEmbedding" android:value="2"/>
-        <!-- DARVIN_ADDED: google_mobile_ads — AdMob App ID for ad serving (production ID) -->
+        <!-- PRIMIO_ADDED: google_mobile_ads — AdMob App ID for ad serving (production ID) -->
         <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-5850600525085444~9636989581"/>
-        <!-- DARVIN_ADDED: firebase_analytics — Firebase Analytics App ID -->
+        <!-- PRIMIO_ADDED: firebase_analytics — Firebase Analytics App ID -->
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="com.google.firebase.analytics.APP_ID" android:value="@string/google_app_id"/>
     </application>

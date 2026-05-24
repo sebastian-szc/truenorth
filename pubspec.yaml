@@ -1,5 +1,5 @@
-name: darvin_app
-description: A Darvin-generated Flutter app
+name: primio_app
+description: A Primio-generated Flutter app
 publish_to: none
 version: 1.0.0+1
 environment:
